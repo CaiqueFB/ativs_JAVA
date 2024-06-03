@@ -15,20 +15,18 @@ public class Ativ15 {
           System.out.println("Por favor, digite um número maior que 0.");
           return;}
 
-        long[] fibonacci = new long[n];
+        long[] fibonacci = new long[x];
         fibonacci[0] = 1;
-        if (n > 1) {
+        if (x > 1) {
         fibonacci[1] = 1;}
 
-        for (int i = 2; i < n; i++) {
+        for (int i = 2; i < x; i++) {
           fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];}
 
-        System.out.println("Série de Fibonacci até o " + n + "º termo:");
-        for (int i = 0; i < n; i++) {
+        System.out.println("Série de Fibonacci até o " + x + "º termo:");
+        for (int i = 0; i < x; i++) {
           System.out.print(fibonacci[i] + " ");}
           System.out.println();
     
     }
 }
-
-
